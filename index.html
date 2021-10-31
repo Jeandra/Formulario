@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <script src="javaScript/script.js"></script>
+  </head>
+  <body>
+    Nome:
+      <input id="name" type="text" maxlength="80">
+      <br><br>
+    Digite um número de 1 a 10:
+      <input id="num" type="number">
+      <br><br>
+    Data:
+    <input type="text" id="datas" maxlength="10" onkeypress="mascaraData(this)">
+      <br><br>
+    Gênero:<br>
+     <input type="radio" name="generos" id="Feminino" checked>Feminino<br>
+     <input type="radio" name="generos" id="Masculino">Masculino<br>
+    
+     <input type="submit" value="Enviar" onclick="return validar()">
+
+     <input type="submit" value="JSON" onclick="return cria_json()">
+
+     <input type="submit" value="Limpar" onclick="return limpar()">
+  </body>
+</html>
